@@ -33,7 +33,7 @@ export async function completion({
   fallback,
   max_tokens,
   temperature = 0,
-  model = "gpt-3.5-turbo", // use gpt-4 for better results
+  model = "gpt-4", // use gpt-4 for better results
 }: CompletionOptions) {
   try {
     // Note: this is not the proper way to use the ChatGPT conversational format, but it works for now
@@ -66,7 +66,7 @@ export async function* completionStream({
   fallback,
   max_tokens = 800,
   temperature = 0,
-  model = "gpt-3.5-turbo", // use gpt-4 for better results
+  model = "gpt-4", // use gpt-4 for better results
 }: CompletionOptions) {
   try {
     // Note: this is not the proper way to use the ChatGPT conversational format, but it works for now
